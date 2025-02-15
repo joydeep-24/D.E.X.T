@@ -1,0 +1,104 @@
+
+.buycontainer{
+  background-color: green;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 450px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 50px;
+}
+
+.inputcontainer {
+  position: relative;
+  margin: 50px auto;
+  width: 200px;
+  color: #ffffff;
+}
+
+.inputcontainer input[type="text"] {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+  color: #ffffff; 
+}
+
+.inputcontainer .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.inputcontainer input[type="text"]:focus ~ .label,
+.inputcontainer input[type="text"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.inputcontainer .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.inputcontainer input[type="text"]:focus ~ .underline,
+.inputcontainer input[type="text"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+button {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #fff;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}

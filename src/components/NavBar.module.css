@@ -1,0 +1,78 @@
+.navbar {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 80%;
+    max-width: 1512px;
+    height: 95px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding: 0 18px;
+    background-color: green;
+  }
+  
+  .logo {
+    padding-right: 48px;
+  }
+  
+  .usinfocontainer {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+    max-width: 1512px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    height: 95px;
+    padding-left: 48px;
+    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+  }
+  
+  .usinfo1 {
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: 20%;
+    min-width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 95px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .usinfo2 {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 30%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .usinfocontent {
+    height: fit-content;
+    height: 34px;
+    border-radius: 25%;
+}
+
+.usinfocontent:hover {
+    /* background-color: greenyellow; */
+    /* box-shadow: 0 0 20px 20px greenyellow; */
+    transition: all ease-in-out 0.3s;
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
